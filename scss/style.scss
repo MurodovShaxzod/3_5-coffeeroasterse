@@ -689,7 +689,7 @@ body {
 }
 
 
-@media (max-width:576px) {
+@media (max-width:768px) {
 
 .header {
   .header__list {
@@ -727,10 +727,11 @@ body {
     position: absolute;
     width: 210px;
     top: -45px;
-    right: -15px;
+    right: -12px;
     padding: 80px 20px 20px 20px; 
     background-color: #2c343e;
     opacity: 1;
+    z-index: -10;
   }
 
   .header-product input:checked ~ .product-nav {
@@ -752,11 +753,12 @@ body {
   .product-nav a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #83888F; 
+    color: #cfcfcf;
+     
   }
 
   .product-nav a:hover {
-    color: #333D4B;
+    color: #83888F;
   }
 
   .header-product input ~ span > .bx-x {
@@ -781,6 +783,7 @@ body {
     z-index: 10;
   }
 
+
   .header-product span > .bx-menu {
     display: block;
     z-index: 10;
@@ -794,6 +797,32 @@ body {
     font-size: 16px;
     margin-top: 0px;
   }
+}
+
+.great {
+  background-image: url(/img/great-mobil.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
+  border-radius: 10px;
+
+  &__text {
+    padding: 100px 25px 39px 40px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+  }
+
+  &__dec {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+
+
 }
 
 }
